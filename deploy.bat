@@ -8,6 +8,8 @@ copy ..\dist\favicon.ico .
 copy ..\dist\index.html  404.html
 xcopy /e/y/i/f ..\dist\static .\static
 :: 下面为提交代码到git仓库的批处理命令
+git config user.name "Junior233"
+git config user.email "3181074645"
 git pull
 git add *
 set /p comment="请输入代码变更说明:"
