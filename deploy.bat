@@ -8,10 +8,10 @@ copy ..\dist\favicon.ico .
 copy ..\dist\index.html  404.html
 xcopy /e/y/i/f ..\dist\static .\static
 :: 下面为提交代码到git仓库的批处理命令
-git config --global --unset user.name
-git config --global --unset user.email
-git config  user.name "Junior233"
-git config  user.email "3181074645@qq.com"
+:: git config --local --unset user.name
+:: git config --local --unset user.email
+git config --local  user.name "Junior233"
+git config --local  user.email "3181074645@qq.com"
 git pull
 git add *
 git config user.name
