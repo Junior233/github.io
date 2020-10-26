@@ -1,13 +1,13 @@
-REM  ÕâÊÇ×¢ÊÍ
+REM  è¿™æ˜¯æ³¨é‡Š
 REM  set  /p comment = "please input code change description"
-REM ÏÂÃæÎª¸´ÖÆdistÄ¿Â¼ÏÂµÄµ½´Ë½Å±¾µ±Ç°Ä¿Â¼µÄÅú´¦ÀíÃüÁî
+REM ä¸‹é¢ä¸ºå¤åˆ¶distç›®å½•ä¸‹çš„åˆ°æ­¤è„šæœ¬å½“å‰ç›®å½•çš„æ‰¹å¤„ç†å‘½ä»¤
 del index.html 404.html favicon.ico
 rd static /s /q
 copy ..\dist\index.html .
 copy ..\dist\favicon.ico .
 copy ..\dist\index.html  404.html
 xcopy /e/y/i/f ..\dist\static .\static
-:: ÏÂÃæÎªÌá½»´úÂëµ½git²Ö¿âµÄÅú´¦ÀíÃüÁî
+:: ä¸‹é¢ä¸ºæäº¤ä»£ç åˆ°gitä»“åº“çš„æ‰¹å¤„ç†å‘½ä»¤
 :: git config --local --unset user.name
 :: git config --local --unset user.email
 git config --local  user.name "Junior233"
@@ -15,13 +15,13 @@ git config --local  user.email "3181074645@qq.com"
 git pull
 git add *
 git config user.name
-set /p comment="ÇëÊäÈë´úÂë±ä¸üËµÃ÷:"
+set /p comment="è¯·è¾“å…¥ä»£ç å˜æ›´è¯´æ˜:"
 if "%comment%"=="" ( 
     git commit -m "[%date% %time%] update"
-    echo "Ä¬ÈÏ´úÂë±ä¸üËµÃ÷Îª[%date% %time%] update"
+    echo "é»˜è®¤ä»£ç å˜æ›´è¯´æ˜ä¸º[%date% %time%] update"
 ) else (
     git commit -m "[%date% %time%] %comment%"
-    echo "×Ô¶¨Òå´úÂë±ä¸üËµÃ÷Îª%comment%"
+    echo "è‡ªå®šä¹‰ä»£ç å˜æ›´è¯´æ˜ä¸º%comment%"
 )
 git push
 ::pause
