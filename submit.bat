@@ -10,3 +10,4 @@ if "%comment%"=="" (
 REM  ÕâÊÇ×¢ÊÍ
 REM  set  /p comment = "please input code change description"
 git push
+pause
