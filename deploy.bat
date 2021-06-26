@@ -1,6 +1,7 @@
 REM  这是注释
 REM  set  /p comment = "please input code change description"
 REM 下面为复制dist目录下的到此脚本当前目录的批处理命令
+chcp 65001
 del index.html 404.html favicon.ico
 rd static /s /q
 copy ..\dist\index.html .
