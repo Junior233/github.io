@@ -15,7 +15,7 @@ git config --local  user.name "Junior233"
 git config --local  user.email "3181074645@qq.com"
 git pull
 git add *
-git config user.name
+:: git config user.name
 set /p comment="请输入代码变更说明:"
 if "%comment%"=="" ( 
     git commit -m "[%date% %time%] update"
