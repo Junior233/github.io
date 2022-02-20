@@ -24,5 +24,4 @@ if "%comment%"=="" (
     echo "自定义代码变更说明为%comment%"
 )
 git push
-pause
 
